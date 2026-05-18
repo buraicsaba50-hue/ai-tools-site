@@ -1,21 +1,42 @@
 export default function Home() {
   return (
-    <html>
-      <body style="font-family: Arial; background:#0b1220; color:white; padding:30px;">
+    <main style={{
+      fontFamily: "Arial",
+      background: "#0b1220",
+      color: "white",
+      minHeight: "100vh",
+      padding: "30px"
+    }}>
+      
+      <h1>🚀 AI Tools Hub</h1>
+      <p>A legjobb AI eszközök egy helyen</p>
 
-        <h1>🚀 AI Tools Hub</h1>
-        <p>A legjobb AI eszközök egy helyen</p>
+      <h2>🔥 Top AI Tools</h2>
 
-        <h2>🔥 Top AI Tools</h2>
+      <div style={{ display: "grid", gap: "15px" }}>
 
-        <ul>
-          <li><a href="https://www.canva.com/ai-image-generator/">🎨 Canva AI</a></li>
-          <li><a href="https://runwayml.com/">🎬 Runway ML</a></li>
-          <li><a href="https://chat.openai.com/">💬 ChatGPT</a></li>
-          <li><a href="https://www.suno.ai/">🎵 Suno AI</a></li>
-        </ul>
+        <a href="https://www.canva.com/ai-image-generator/" target="_blank"
+           style={{ padding: "15px", background: "#1e293b", borderRadius: "10px", color: "white", textDecoration: "none" }}>
+          🎨 Canva AI
+        </a>
 
-      </body>
-    </html>
+        <a href="https://runwayml.com/" target="_blank"
+           style={{ padding: "15px", background: "#1e293b", borderRadius: "10px", color: "white", textDecoration: "none" }}>
+          🎬 Runway ML
+        </a>
+
+        <a href="https://chat.openai.com/" target="_blank"
+           style={{ padding: "15px", background: "#1e293b", borderRadius: "10px", color: "white", textDecoration: "none" }}>
+          💬 ChatGPT
+        </a>
+
+        <a href="https://www.suno.ai/" target="_blank"
+           style={{ padding: "15px", background: "#1e293b", borderRadius: "10px", color: "white", textDecoration: "none" }}>
+          🎵 Suno AI
+        </a>
+
+      </div>
+
+    </main>
   );
 }
